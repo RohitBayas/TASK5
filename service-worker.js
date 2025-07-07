@@ -6,8 +6,8 @@ self.addEventListener('install', event => {
         './index.html',
         './style.css',
         './manifest.json',
-        './icon-192.png',
-        './icon-512.png'
+        './RBlogo.png',
+        './RB icon.png'
       ]);
     })
   );
