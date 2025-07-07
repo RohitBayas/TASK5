@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rohit Bayas Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="RBlogo.png" type="image/png">
+  <meta name="theme-color" content="#111111">
+
+  <!-- W3.CSS + Font Awesome + Fonts -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Optional: Your own CSS (if needed) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="width: 120px; background: #222;">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black"><i class="fa fa-home w3-xxlarge"></i><p>HOME</p></a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><i class="fa fa-user w3-xxlarge"></i><p>ABOUT</p></a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><i class="fa fa-envelope w3-xxlarge"></i><p>CONTACT</p></a>
+</nav>
+
+<!-- Top bar for small screens -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25%">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25%">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25%">CONTACT</a>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="w3-padding-large" id="main" style="margin-left:120px;">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Rohit Bayas</h1>
+    <p>Coder and developer.</p>
+  </header>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Rohit Bayas</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>My name is Rohit Bayas, and I am currently a 2024-25 at zeal college of enginering. I have a strong passion for coding,
+         and I enjoy learning about new technologies and techniques.I like coding, solving maths numericals and communication with others. 
+         i also like to play Athletics and volleyball.</p>
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Python</p><div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:85%"></div></div>
+    <p class="w3-wide">Gaming</p><div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:90%"></div></div>
+    <p class="w3-wide">Coding</p><div class="w3-white"><div class="w3-dark-grey" style="height:28px;width:80%"></div></div><br>
+
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+    <p>Student of Zeal College of Engineering</p>
+    <p>Branch: Artificial Intelligence and Machine Learning</p><br>
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> sus gaon pune-411041</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> +91 932270**</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> bayasrohit68@gmail.com</p>
+    </div><br>
+
+    <form>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required></p>
+      <p><textarea class="w3-input w3-padding-16" placeholder="Message" required></textarea></p>
+      <p><button class="w3-button w3-light-grey w3-padding-large" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(() => console.log('Service Worker registered!'));
+  }
+</script>
+</body>
+</html>
